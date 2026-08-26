@@ -1,0 +1,929 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microsoft Ads Case Study: ROAS von 4,44× auf 9,17× gesteigert | DDM</title>
+  <meta name="description" content="Wie ein mittelständischer E-Commerce-Account durch Account-Bereinigung, sauberes Tracking und datenbasierte Steuerung seinen Microsoft-Ads-ROAS von 4,44× auf 9,17× steigerte." />
+  <meta name="theme-color" content="#1b1e27" />
+  <link rel="canonical" href="https://datadrivenmarketing.de/cases/microsoft-ads-profitabel-machen" />
+
+  <!-- Consent-Banner. Muss vor allem anderen stehen: Das Skript setzt den
+       Consent-Mode-Default auf "denied" und laedt erst danach den Tag Manager.
+       Wird diese Reihenfolge umgestellt, feuern Tags vor der Einwilligung. -->
+  <script src="https://ddm-consent-prod.datadrivenmarketing.workers.dev/v1.1.2/consent.js"
+    integrity="sha384-jBr8HaQIqR9gSQsaV+DHL2rydJ4GyaGCED+fvA4SBF7zEqYxDO3Y6B9Ml+SRMO+2"
+    crossorigin="anonymous"
+    data-gtm="GTM-KN44W5SD"
+    data-site="ddm-website"
+    data-endpoint="https://ddm-consent-prod.datadrivenmarketing.workers.dev/api/consent"
+    data-privacy="/datenschutz"
+    data-imprint="/impressum"
+    data-accent="#3354a1"></script>
+
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="DDM Data Driven Marketing" />
+  <meta property="og:title" content="Wie ein Microsoft-Ads-Account von 4,44× auf 9,17× ROAS entwickelt wurde" />
+  <meta property="og:description" content="Übernommen mit strukturellen Altlasten und unvollständiger Umsatzmessung. Nach Bereinigung, Tracking und schrittweiser Neuausrichtung stieg der ROAS über vier Monate um rund 107 %." />
+  <meta property="og:url" content="https://datadrivenmarketing.de/cases/microsoft-ads-profitabel-machen" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://datadrivenmarketing.de/images/data_driven_marketing_Logo_darkgrey_1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logo der DDM Data Driven Marketing GmbH" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="../Logos/ddm Logo svg/Signet_darkgrey.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="../Logos/ddm Logo svg/png/Signet_darkgrey.png" />
+
+  <link rel="stylesheet" href="../dist/output.css" />
+</head>
+
+<body class="bg-canvas font-body text-ink-950 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-control focus:bg-ink-950 focus:px-4 focus:py-2 focus:text-white">
+    Zum Inhalt springen
+  </a>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="sticky top-0 z-40 border-b border-ink-200 transition-shadow duration-200">
+    <div class="container-page flex items-center gap-6 py-4">
+      <a href="/" class="flex flex-shrink-0 items-center" aria-label="DDM Data Driven Marketing – Startseite">
+        <img src="../Logos/ddm Logo svg/ddm_Logo_darkgrey.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+      </a>
+
+      <nav class="ml-auto hidden items-center gap-8 md:flex" aria-label="Hauptnavigation">
+        <a href="/#leistungen" class="nav-link">Leistungen</a>
+        <a href="/#prozess" class="nav-link">Prozess</a>
+        <a href="/#cases" class="nav-link">Cases</a>
+        <a href="/#werte" class="nav-link">Werte</a>
+        <a href="/team" class="nav-link">Team</a>
+        <a href="/#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="ml-auto flex items-center gap-3 md:ml-0">
+        <a href="/#kontakt" class="btn-primary hidden sm:inline-flex">Analyse anfragen</a>
+        <button
+          class="js-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-control border border-ink-200 md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Menü öffnen"
+        >
+          <span class="relative block h-3.5 w-4" aria-hidden="true">
+            <span class="absolute inset-x-0 top-0 h-[1.5px] bg-ink-950"></span>
+            <span class="absolute inset-x-0 top-1/2 h-[1.5px] -translate-y-1/2 bg-ink-950"></span>
+            <span class="absolute inset-x-0 bottom-0 h-[1.5px] bg-ink-950"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="border-t border-ink-200 bg-white md:hidden">
+      <nav class="container-page flex flex-col py-2" aria-label="Mobile Navigation">
+        <a href="/#leistungen" class="border-b border-ink-100 py-3 font-body text-ink-950">Leistungen</a>
+        <a href="/#prozess" class="border-b border-ink-100 py-3 font-body text-ink-950">Prozess</a>
+        <a href="/#cases" class="border-b border-ink-100 py-3 font-body text-ink-950">Cases</a>
+        <a href="/#werte" class="border-b border-ink-100 py-3 font-body text-ink-950">Werte</a>
+        <a href="/team" class="border-b border-ink-100 py-3 font-body text-ink-950">Team</a>
+        <a href="/#faq" class="border-b border-ink-100 py-3 font-body text-ink-950">FAQ</a>
+        <a href="/#kontakt" class="py-3 font-body font-medium text-accent-600">Analyse anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== BREADCRUMB ===== -->
+  <div class="border-b border-ink-200 bg-white">
+    <div class="container-page flex items-center justify-between gap-4 py-3 text-sm">
+      <p class="text-ink-700">
+        <a href="/#cases" class="hover:text-ink-950">Cases</a>
+        <span class="mx-1.5" aria-hidden="true">›</span>
+        <span class="text-ink-950">Microsoft Ads</span>
+      </p>
+      <a href="/#cases" class="nav-link">← Alle Cases</a>
+    </div>
+  </div>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="brand-gradient-dark relative overflow-hidden py-16 text-white sm:py-20" aria-labelledby="case-title">
+      <img src="../Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+           class="signet-watermark -right-16 -top-16 w-64 sm:w-80" />
+      <div class="container-page relative">
+        <div class="flex flex-wrap gap-2">
+          <span class="pill border-accent-600 bg-accent-600 text-white">Microsoft Advertising</span>
+          <span class="pill">E-Commerce</span>
+          <span class="pill">High-Ticket</span>
+          <span class="pill">Account-Übernahme</span>
+        </div>
+
+        <h1 id="case-title" class="display-lg mt-6 max-w-[24ch]">
+          Wie ein Microsoft-Ads-Account von 4,44&times; auf 9,17&times; ROAS entwickelt wurde
+        </h1>
+
+        <p class="mt-6 max-w-[64ch] text-lg leading-relaxed text-ink-300">
+          Der Account wurde mit strukturellen Altlasten und unvollständiger Umsatzmessung übernommen. Nach Account-Bereinigung, sauberem Tracking und einer schrittweisen Neuausrichtung stieg der ROAS über vier aufeinanderfolgende Monate um rund 107&nbsp;%.
+        </p>
+
+        <p class="mt-5 max-w-[70ch] text-sm leading-relaxed text-ink-400">
+          Datenbasis: Microsoft Ads · Kauf-Conversions · Tracking vollständig aktiv seit kurz vor dem 1.&nbsp;Monat · Vergleich über vier aufeinanderfolgende Monate
+        </p>
+
+        <div class="mt-9 flex flex-wrap items-center gap-x-8 gap-y-4">
+          <a href="/#kontakt" class="js-cta btn-on-dark" data-source="case_microsoft_ads_hero">
+            Account-Potenzial prüfen
+          </a>
+          <a href="#entwicklung" class="font-body text-ink-300 underline decoration-ink-600 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white">
+            Entwicklung im Verlauf ansehen
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== HERO-KPI-LEISTE (4.-Monat-Stand, jeweils mit 1.-Monat-Vergleich) =====
+         Fünf statt vier Kennzahlen: Der Case lebt vom Vorher-Nachher, und
+         Spend gehört zwingend dazu – ohne ihn liest sich "mehr Conversion-Wert"
+         wie erkaufte Mehrleistung. Auf Mobile spannt die fünfte Zelle über
+         beide Spalten, sonst bliebe eine halbe Waisenzelle stehen. -->
+    <section aria-label="Kennzahlen im 4. Monat im Vergleich zum 1. Monat" class="border-b border-ink-200 bg-white">
+      <div class="container-page">
+        <dl class="grid grid-cols-2 divide-x divide-y divide-ink-200 border-t border-ink-200 lg:grid-cols-5 lg:divide-y-0">
+          <div class="px-5 py-6 sm:px-6">
+            <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS im 4. Monat</dt>
+            <dd class="mt-1 font-display text-xl tabular-nums text-accent-600 sm:text-2xl lg:text-3xl">9,17×</dd>
+            <p class="mt-1 text-xs text-ink-700">4,44× im 1. Monat · +107&nbsp;%</p>
+          </div>
+          <div class="px-5 py-6 sm:px-6">
+            <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR im 4. Monat</dt>
+            <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl lg:text-3xl">10,9&nbsp;%</dd>
+            <p class="mt-1 text-xs text-ink-700">22,51&nbsp;% im 1. Monat</p>
+          </div>
+          <div class="px-5 py-6 sm:px-6">
+            <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+            <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl lg:text-3xl">47.146&nbsp;€</dd>
+            <p class="mt-1 text-xs text-ink-700">+23&nbsp;% gegenüber dem 1. Monat</p>
+          </div>
+          <div class="px-5 py-6 sm:px-6">
+            <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Kosten pro Conversion</dt>
+            <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl lg:text-3xl">302&nbsp;€</dd>
+            <p class="mt-1 text-xs text-ink-700">717&nbsp;€ im 1. Monat · −58&nbsp;%</p>
+          </div>
+          <div class="col-span-2 px-5 py-6 sm:px-6 lg:col-span-1">
+            <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten im 4. Monat</dt>
+            <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl lg:text-3xl">5.140&nbsp;€</dd>
+            <p class="mt-1 text-xs text-ink-700">−40&nbsp;% gegenüber dem 1. Monat</p>
+          </div>
+        </dl>
+        <p class="border-t border-ink-200 py-3 text-xs text-ink-700">
+          Werte laut Microsoft Ads, Gesamtaccount. Conversion-Wert bezeichnet den plattformseitig attribuierten Wert, keinen geprüften Backend-Umsatz.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== AUSGANGSLAGE ===== -->
+    <section aria-labelledby="ausgangslage-title" class="bg-ink-50 section-shell">
+      <div class="container-page">
+        <h2 id="ausgangslage-title" class="section-title">
+          Bevor mehr Budget sinnvoll war, musste zunächst die Grundlage stimmen
+        </h2>
+
+        <div class="mt-6 max-w-[68ch] space-y-5 text-lg leading-relaxed text-ink-800">
+          <p>
+            Der Microsoft-Ads-Account eines mittelständischen E-Commerce-Anbieters mit hochpreisigen Produkten und längeren Entscheidungsprozessen wurde aus einer bestehenden Betreuung übernommen. Auf den ersten Blick schien insbesondere Shopping stärker zu performen als Search.
+          </p>
+          <p>
+            Bei der Analyse zeigte sich jedoch, dass die Datengrundlage und mehrere Account-Bestandteile zunächst bereinigt werden mussten, bevor belastbare Budgetentscheidungen möglich waren.
+          </p>
+        </div>
+
+        <div class="mt-12 max-w-4xl border-t border-ink-300 pt-8">
+          <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-700">Was wir bei der Übernahme vorfanden</h3>
+          <ul class="mt-5 grid gap-x-10 gap-y-3 sm:grid-cols-2" role="list">
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Keine belastbare Umsatzmessung vor Beginn des Messzeitraums</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Veraltete Anzeigentexte, teilweise mit Weihnachtsaktionen</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Fehlerhafte Produktbezeichnungen</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Widersprüchliche Brand- und Keyword-Einstellungen</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Eigene Brand teilweise als negatives Keyword hinterlegt</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Irrelevante Länder- und Sprachaussteuerung</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-ink-800">Keine verlässliche Grundlage für wirtschaftliche Kampagnenvergleiche</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== DIE ZENTRALEN FRAGEN ===== -->
+    <section aria-labelledby="fragen-title" class="bg-white section-shell">
+      <div class="container-page">
+        <h2 id="fragen-title" class="section-title">Die zentralen Fragen</h2>
+
+        <ol class="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2" role="list">
+          <li>
+            <p class="font-display text-xl text-accent-600">01</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Welche Kampagnen erzeugen tatsächlich wirtschaftlich relevanten Conversion-Wert?
+            </p>
+          </li>
+          <li>
+            <p class="font-display text-xl text-accent-600">02</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Wird Budget auf Basis unvollständiger Daten zwischen Search und Shopping verschoben?
+            </p>
+          </li>
+          <li>
+            <p class="font-display text-xl text-accent-600">03</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Welche Kampagnen sammeln nur günstige Klicks und welche erzeugen Conversion-Wert?
+            </p>
+          </li>
+          <li>
+            <p class="font-display text-xl text-accent-600">04</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Sind Kauf-Conversions und Conversion-Werte vollständig erfasst?
+            </p>
+          </li>
+          <li>
+            <p class="font-display text-xl text-accent-600">05</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Welche Kampagnen sollten reduziert, stabilisiert oder skaliert werden?
+            </p>
+          </li>
+          <li>
+            <p class="font-display text-xl text-accent-600">06</p>
+            <p class="mt-2 max-w-[52ch] text-ink-800">
+              Ab wann ist die Datengrundlage belastbar genug für größere Budgetentscheidungen?
+            </p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== UNSER ANSATZ ===== -->
+    <section aria-labelledby="ansatz-title" class="bg-ink-50 section-shell">
+      <div class="container-page">
+        <h2 id="ansatz-title" class="section-title">Unser Ansatz</h2>
+
+        <ol class="mt-12 max-w-4xl divide-y divide-ink-200 border-t border-ink-300" role="list">
+          <li class="grid gap-3 py-7 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <p class="font-display text-2xl text-accent-600 sm:w-16">01</p>
+            <div>
+              <h3 class="font-body font-medium text-ink-950">Account-Grundlage bereinigen</h3>
+              <p class="mt-2 max-w-[62ch] text-ink-700">
+                Veraltete Anzeigen, fehlerhafte Produktbegriffe, widersprüchliche Keyword-Einstellungen sowie irrelevante Länder- und Sprachaussteuerung wurden korrigiert.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-3 py-7 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <p class="font-display text-2xl text-accent-600 sm:w-16">02</p>
+            <div>
+              <h3 class="font-body font-medium text-ink-950">Kauf- und Umsatztracking herstellen</h3>
+              <p class="mt-2 max-w-[62ch] text-ink-700">
+                Kurz vor dem 1.&nbsp;Monat wurden Käufe und Conversion-Werte belastbar erfasst. Damit konnten Kampagnen erstmals nach ihrem wirtschaftlichen Beitrag statt nur nach Klicks bewertet werden.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-3 py-7 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <p class="font-display text-2xl text-accent-600 sm:w-16">03</p>
+            <div>
+              <h3 class="font-body font-medium text-ink-950">Nicht vorschnell Budget verschieben</h3>
+              <p class="mt-2 max-w-[62ch] text-ink-700">
+                Search wurde trotz zunächst schwächer wirkender Performance nicht pauschal reduziert. Stattdessen wurde der Bereich kontrolliert weitergeführt und auf Basis der neuen Daten bewertet.
+              </p>
+            </div>
+          </li>
+          <li class="grid gap-3 py-7 sm:grid-cols-[auto_1fr] sm:gap-8">
+            <p class="font-display text-2xl text-accent-600 sm:w-16">04</p>
+            <div>
+              <h3 class="font-body font-medium text-ink-950">Nach Wirtschaftlichkeit steuern</h3>
+              <p class="mt-2 max-w-[62ch] text-ink-700">
+                Ab dem 1.&nbsp;Monat wurden Kampagnen anhand von Conversion-Wert, ROAS, KUR, Kosten pro Conversion und Suchintention priorisiert und kontinuierlich angepasst.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== 1. MONAT: ERSTER VOLLSTÄNDIG GEMESSENER MONAT ===== -->
+    <section id="ergebnisse" aria-labelledby="april-title" class="bg-white section-shell">
+      <div class="container-page">
+        <h2 id="april-title" class="section-title">Der erste vollständig gemessene Monat</h2>
+        <p class="mt-4 max-w-[68ch] text-lg leading-relaxed text-ink-800">
+          Da das Umsatztracking erst kurz zuvor vollständig aktiv wurde, ist der 1.&nbsp;Monat der erste mit durchgängig erfassten Kauf-Conversions. Er dient deshalb als Referenzpunkt für alle folgenden Vergleiche.
+        </p>
+
+        <article aria-labelledby="april-account" class="surface-dark relative mt-12 overflow-hidden p-6 sm:p-10">
+          <img src="../Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+               class="signet-watermark -bottom-16 -right-12 w-56 sm:w-72" />
+          <div class="relative">
+            <p class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Gesamtaccount · 1. Monat</p>
+            <h3 id="april-account" class="mt-3 font-display text-2xl sm:text-3xl">Der Ausgangspunkt der Messung</h3>
+
+            <dl class="mt-8 grid grid-cols-2 gap-x-5 gap-y-6 sm:gap-x-8 lg:grid-cols-4">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">38.194,40&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">8.599,40&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">ROAS</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">4,44×</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">KUR</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">22,51&nbsp;%</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Conversions</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">12</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Kosten pro Conversion</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">716,62&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Klicks</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">24.906</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Ø CPC</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums sm:text-2xl lg:text-3xl">0,35&nbsp;€</dd>
+              </div>
+            </dl>
+          </div>
+        </article>
+
+        <div class="mt-6 grid gap-6 lg:grid-cols-[1fr_1fr]">
+
+          <article aria-labelledby="april-kampagne" class="surface p-6 sm:p-8">
+            <p class="font-body text-sm font-medium uppercase tracking-wide text-ink-700">Einzelkampagne · 1. Monat</p>
+            <h3 id="april-kampagne" class="mt-3 font-display text-xl text-ink-950 sm:text-2xl">Stärkste Non-Brand-Search-Kampagne</h3>
+
+            <dl class="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:gap-x-6">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">19.151,38&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">2.401,43&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-accent-600 sm:text-2xl">7,97×</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">12,54&nbsp;%</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Conversions</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">4</dd>
+              </div>
+            </dl>
+
+            <p class="mt-6 border-t border-ink-200 pt-5 text-ink-800">
+              Diese Search-Kampagne war im 1. Monat zugleich die Kampagne mit dem höchsten attribuierten Conversion-Wert im gesamten Account. Die Analyse zeigte bereits im ersten vollständigen Messmonat, dass Search nicht grundsätzlich ineffizient war.
+            </p>
+          </article>
+
+          <!-- Search gesamt: bewusst über den kompletten Betrachtungszeitraum
+               ausgewiesen, damit die Aussage nicht an einem einzelnen Monat
+               oder einer einzelnen Kampagne hängt. Abgeleitet aus der Summe
+               aller Search-Kampagnen inklusive der Target-ROAS-Experimente,
+               ohne Shopping und MSAN. -->
+          <article aria-labelledby="search-gesamt" class="surface p-6 sm:p-8">
+            <p class="font-body text-sm font-medium uppercase tracking-wide text-ink-700">Search gesamt · 1.–4. Monat</p>
+            <h3 id="search-gesamt" class="mt-3 font-display text-xl text-ink-950 sm:text-2xl">Search über den gesamten Zeitraum</h3>
+
+            <dl class="mt-6 grid grid-cols-2 gap-x-5 gap-y-5 sm:gap-x-6">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">131.142&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">22.007&nbsp;€</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-accent-600 sm:text-2xl">5,96×</dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">16,78&nbsp;%</dd>
+              </div>
+              <div class="col-span-2">
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Anteil am Account-Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950 sm:text-2xl">rund 88&nbsp;%</dd>
+              </div>
+            </dl>
+
+            <p class="mt-6 border-t border-ink-200 pt-5 text-ink-800">
+              Search blieb über alle vier Monate der wesentliche Träger des attribuierten Conversion-Werts. Eine pauschale Reduktion hätte daher das Risiko beinhaltet, einen wirtschaftlich relevanten Bereich zu schwächen.
+            </p>
+            <p class="mt-3 text-sm text-ink-700">
+              Im 4. Monat allein erzielte Search 38.341&nbsp;€ Conversion-Wert bei 3.612&nbsp;€ Werbekosten und einem ROAS von 10,61.
+            </p>
+            <p class="mt-3 text-sm text-ink-700">
+              Die Plattform-Attribution beweist nicht, dass Search jeden Kauf allein ausgelöst hat.
+            </p>
+          </article>
+
+        </div>
+
+        <div class="mt-10 max-w-[80ch] border-t border-ink-300 pt-6">
+          <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-700">Datenbasis und Methodik</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-700">
+            Datenbasis: Microsoft Advertising. Dargestellte Werte sind plattformseitig attribuierte Conversion-Werte und keine ungeprüften Backend-Umsätze. Vollständiges Umsatztracking seit kurz vor dem 1. Monat, weshalb der Vormonat nicht als Vergleichsmonat herangezogen wird. ROAS entspricht Conversion-Wert geteilt durch Werbekosten, KUR entspricht Werbekosten geteilt durch Conversion-Wert. Die Werte sind keine Aussage über Marge, Retouren oder Stornos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ENTWICKLUNG ÜBER VIER MONATE =====
+         Zentrales Proof-Element der Seite.
+         Das ROAS-Diagramm nutzt bewusst durchgehend dieselbe Balkenfarbe: Der
+         schwache 2. Monat soll durch seine Kürze auffallen, nicht durch eine
+         Sonderfarbe, die eine andere Kennzahl suggerieren würde. Balken sind
+         aria-hidden, alle Werte stehen vollständig in der dl. Balkenbreiten
+         sind relativ zum Maximum (4. Monat, 9,17×) skaliert.
+         Bei den Monatskarten haben Conversion-Wert und Werbekosten getrennte
+         Skalen – eine gemeinsame Skala würde die Kostenbalken auf ~11–19 %
+         stauchen und untereinander ununterscheidbar machen. -->
+    <section id="entwicklung" aria-labelledby="entwicklung-title" class="bg-ink-50 section-shell">
+      <div class="container-page">
+        <h2 id="entwicklung-title" class="section-title">Vier Monate später: deutlich bessere Wirtschaftlichkeit</h2>
+        <p class="mt-4 max-w-[68ch] text-lg leading-relaxed text-ink-800">
+          Die Entwicklung verlief nicht linear. Nach einem schwächeren 2. Monat wurden Budgets und Kampagnen weiter nach Wirtschaftlichkeit priorisiert. Im 3. und 4. Monat verbesserten sich Effizienz und Conversion-Wert deutlich.
+        </p>
+
+        <!-- ROAS-Verlauf -->
+        <article aria-labelledby="roas-verlauf" class="surface mt-12 p-6 sm:p-8">
+          <h3 id="roas-verlauf" class="font-display text-xl text-ink-950 sm:text-2xl">ROAS im Verlauf</h3>
+          <p class="mt-2 text-sm text-ink-700">Längere Balken bedeuten einen wirtschaftlich günstigeren Ertrag je eingesetztem Werbe-Euro.</p>
+
+          <dl class="mt-8 space-y-5">
+            <div class="grid grid-cols-[3.25rem_1fr] items-center gap-4 sm:grid-cols-[4.5rem_1fr]">
+              <dt class="font-body text-sm text-ink-700">1. Monat</dt>
+              <dd class="flex items-center gap-4">
+                <span class="h-2.5 flex-1 rounded-full bg-ink-200" aria-hidden="true">
+                  <span class="block h-2.5 rounded-full bg-accent-600" style="width: 48.4%"></span>
+                </span>
+                <span class="w-[4.5rem] flex-shrink-0 text-right font-display text-lg tabular-nums text-ink-950">4,44×</span>
+              </dd>
+            </div>
+            <div class="grid grid-cols-[3.25rem_1fr] items-center gap-4 sm:grid-cols-[4.5rem_1fr]">
+              <dt class="font-body text-sm text-ink-700">2. Monat</dt>
+              <dd class="flex items-center gap-4">
+                <span class="h-2.5 flex-1 rounded-full bg-ink-200" aria-hidden="true">
+                  <span class="block h-2.5 rounded-full bg-accent-600" style="width: 27.2%"></span>
+                </span>
+                <span class="w-[4.5rem] flex-shrink-0 text-right font-display text-lg tabular-nums text-ink-950">2,49×</span>
+              </dd>
+            </div>
+            <div class="grid grid-cols-[3.25rem_1fr] items-center gap-4 sm:grid-cols-[4.5rem_1fr]">
+              <dt class="font-body text-sm text-ink-700">3. Monat</dt>
+              <dd class="flex items-center gap-4">
+                <span class="h-2.5 flex-1 rounded-full bg-ink-200" aria-hidden="true">
+                  <span class="block h-2.5 rounded-full bg-accent-600" style="width: 68.4%"></span>
+                </span>
+                <span class="w-[4.5rem] flex-shrink-0 text-right font-display text-lg tabular-nums text-ink-950">6,27×</span>
+              </dd>
+            </div>
+            <div class="grid grid-cols-[3.25rem_1fr] items-center gap-4 sm:grid-cols-[4.5rem_1fr]">
+              <dt class="font-body text-sm text-ink-700">4. Monat</dt>
+              <dd class="flex items-center gap-4">
+                <span class="h-2.5 flex-1 rounded-full bg-ink-200" aria-hidden="true">
+                  <span class="block h-2.5 rounded-full bg-accent-600" style="width: 100%"></span>
+                </span>
+                <span class="w-[4.5rem] flex-shrink-0 text-right font-display text-lg tabular-nums text-ink-950">9,17×</span>
+              </dd>
+            </div>
+          </dl>
+        </article>
+
+        <!-- Monatskarten -->
+        <div class="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+          <article aria-labelledby="monat-april" class="surface p-6">
+            <h3 id="monat-april" class="font-display text-xl text-ink-950">1. Monat</h3>
+            <dl class="mt-5 space-y-4">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">38.194&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-accent-600" style="width: 81%"></div>
+                </div>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">8.599&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-ink-600" style="width: 98.4%"></div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3 border-t border-ink-200 pt-4">
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-accent-600">4,44×</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">22,51&nbsp;%</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Conv.</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">12</dd>
+                </div>
+              </div>
+              <div class="border-t border-ink-200 pt-4">
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Kosten pro Conversion</dt>
+                <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">716,62&nbsp;€</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article aria-labelledby="monat-mai" class="surface p-6">
+            <h3 id="monat-mai" class="font-display text-xl text-ink-950">2. Monat</h3>
+            <dl class="mt-5 space-y-4">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">21.724&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-accent-600" style="width: 46.1%"></div>
+                </div>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">8.742&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-ink-600" style="width: 100%"></div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3 border-t border-ink-200 pt-4">
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-accent-600">2,49×</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">40,24&nbsp;%</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Conv.</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">10</dd>
+                </div>
+              </div>
+              <div class="border-t border-ink-200 pt-4">
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Kosten pro Conversion</dt>
+                <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">874,16&nbsp;€</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article aria-labelledby="monat-juni" class="surface p-6">
+            <h3 id="monat-juni" class="font-display text-xl text-ink-950">3. Monat</h3>
+            <dl class="mt-5 space-y-4">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">42.149&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-accent-600" style="width: 89.4%"></div>
+                </div>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">6.718&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-ink-600" style="width: 76.8%"></div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3 border-t border-ink-200 pt-4">
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-accent-600">6,27×</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">15,94&nbsp;%</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Conv.</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">19</dd>
+                </div>
+              </div>
+              <div class="border-t border-ink-200 pt-4">
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Kosten pro Conversion</dt>
+                <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">353,56&nbsp;€</dd>
+              </div>
+            </dl>
+          </article>
+
+          <article aria-labelledby="monat-juli" class="surface p-6">
+            <h3 id="monat-juli" class="font-display text-xl text-ink-950">4. Monat</h3>
+            <dl class="mt-5 space-y-4">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">47.146&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-accent-600" style="width: 100%"></div>
+                </div>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Werbekosten</dt>
+                <dd class="mt-1 font-display text-xl tabular-nums text-ink-950">5.140&nbsp;€</dd>
+                <div class="mt-2 h-1.5 w-full rounded-full bg-ink-200" aria-hidden="true">
+                  <div class="h-1.5 rounded-full bg-ink-600" style="width: 58.8%"></div>
+                </div>
+              </div>
+              <div class="grid grid-cols-3 gap-3 border-t border-ink-200 pt-4">
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-accent-600">9,17×</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">10,9&nbsp;%</dd>
+                </div>
+                <div>
+                  <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Conv.</dt>
+                  <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">17</dd>
+                </div>
+              </div>
+              <div class="border-t border-ink-200 pt-4">
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-700">Kosten pro Conversion</dt>
+                <dd class="mt-1 font-display text-lg tabular-nums text-ink-950">302,37&nbsp;€</dd>
+              </div>
+            </dl>
+          </article>
+
+        </div>
+
+        <p class="mt-6 text-sm text-ink-700">
+          Die Balken vergleichen jeweils dieselbe Kennzahl über die vier Monate. Conversion-Wert und Werbekosten haben eigene Skalen und sind nicht gegeneinander lesbar.
+        </p>
+
+        <!-- ===== 1. VS. 4. MONAT – MANAGEMENT-SUMMARY ===== -->
+        <article aria-labelledby="vergleich-title" class="surface-dark relative mt-12 overflow-hidden p-6 sm:p-10">
+          <img src="../Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+               class="signet-watermark -bottom-20 -right-14 w-56 sm:w-72" />
+          <div class="relative">
+            <p class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Gesamtaccount · 1. gegenüber 4. Monat</p>
+            <h3 id="vergleich-title" class="mt-3 font-display text-2xl sm:text-3xl">Was sich in vier Monaten verändert hat</h3>
+
+            <dl class="mt-8 grid gap-x-8 gap-y-7 sm:grid-cols-2 lg:grid-cols-3">
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">ROAS</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">4,44× → 9,17×</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">+107&nbsp;%</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Kosten pro Conversion</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">717&nbsp;€ → 302&nbsp;€</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">−58&nbsp;%</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Attribuierter Conversion-Wert</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">38.194&nbsp;€ → 47.146&nbsp;€</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">+23&nbsp;%</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Conversions</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">12 → 17</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">+42&nbsp;%</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">Werbekosten</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">8.599&nbsp;€ → 5.140&nbsp;€</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">−40&nbsp;%</span>
+                </dd>
+              </div>
+              <div>
+                <dt class="font-body text-xs uppercase tracking-wide text-ink-400">KUR</dt>
+                <dd class="mt-1">
+                  <span class="font-display text-xl tabular-nums sm:text-2xl">22,51&nbsp;% → 10,9&nbsp;%</span>
+                  <span class="mt-1 block font-body text-sm text-accent-400">−52&nbsp;%</span>
+                </dd>
+              </div>
+            </dl>
+
+            <p class="mt-9 max-w-[54ch] border-t border-ink-800 pt-7 font-display text-2xl leading-snug sm:text-3xl">
+              Im 4. Monat erzielte der Account rund 23&nbsp;% mehr attribuierten Conversion-Wert als im 1. Monat, bei rund 40&nbsp;% weniger Werbekosten.
+            </p>
+          </div>
+        </article>
+
+        <!-- Einzelkampagnen bewusst nur qualitativ: Bei Spends im niedrigen
+             dreistelligen Bereich und ein bis fünf Conversions wären
+             ROAS-Werte als Schlagzahl nicht belastbar. Hauptbeweis bleibt
+             die Accountebene oben. -->
+        <div class="mt-10 max-w-[80ch] border-t border-ink-300 pt-6">
+          <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-700">Einordnung einzelner Kampagnen</h3>
+          <p class="mt-3 text-sm leading-relaxed text-ink-700">
+            Nach der Neustrukturierung erreichten einzelne Kampagnen im 4. Monat deutlich höhere ROAS-Werte als der Accountdurchschnitt. Da diese Kampagnen jeweils nur wenige hundert Euro Werbekosten und eine einstellige Zahl an Conversions aufweisen, sind sie als Einzelnachweis nicht belastbar. Die Bewertung dieses Falls stützt sich deshalb durchgängig auf die Accountebene.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== STRATEGISCHES ZITAT =====
+         Zitat-Karte nach dem Muster der Design Guidelines, identisch zur
+         Startseite. Hervorgehoben ist das eine Wort, an dem die Aussage
+         kippt – analog zum Guidelines-Beispiel "Beratung, nicht Agentur." -->
+    <section aria-label="Strategische Erkenntnis" class="brand-gradient-soft section-shell">
+      <div class="container-page">
+        <figure class="surface mx-auto max-w-2xl px-8 py-12 sm:px-14 sm:py-16">
+          <span class="quote-mark" aria-hidden="true">&rdquo;</span>
+          <blockquote class="quote-text">
+            <span class="font-bold italic text-accent-600">Nicht</span> jede schwache Kampagne ist ein Performance-Problem. Manchmal liegt das Problem in Messung, Struktur oder Steuerung.&ldquo;
+          </blockquote>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== LEARNINGS ===== -->
+    <section aria-labelledby="learnings-title" class="bg-white section-shell">
+      <div class="container-page">
+        <h2 id="learnings-title" class="section-title">Was wir daraus ableiten</h2>
+
+        <div class="mt-12 grid gap-x-10 gap-y-10 sm:grid-cols-2">
+          <div>
+            <h3 class="font-body font-medium text-ink-950">Messung kommt vor Skalierung</h3>
+            <p class="mt-2 max-w-[52ch] text-ink-700">
+              Ohne vollständige Kauf- und Conversion-Werte lassen sich Kampagnen nicht zuverlässig nach Wirtschaftlichkeit steuern.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-body font-medium text-ink-950">Account-Hygiene kommt vor mehr Budget</h3>
+            <p class="mt-2 max-w-[52ch] text-ink-700">
+              Veraltete Anzeigen, fehlerhafte Keywords und widersprüchliche Aussteuerung verzerren Performance und Lernsignale.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-body font-medium text-ink-950">CPC ist keine Wirtschaftlichkeitskennzahl</h3>
+            <p class="mt-2 max-w-[52ch] text-ink-700">
+              Günstige Klicks sind nur dann wertvoll, wenn daraus wirtschaftlich relevante Conversions und Conversion-Werte entstehen.
+            </p>
+          </div>
+          <div>
+            <h3 class="font-body font-medium text-ink-950">Performance entwickelt sich nicht linear</h3>
+            <p class="mt-2 max-w-[52ch] text-ink-700">
+              Der schwächere 2. Monat zeigt, warum einzelne Monate nicht isoliert bewertet werden sollten. Entscheidend ist, wie systematisch auf neue Daten reagiert wird.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== RELEVANZ-BLOCK ===== -->
+    <section aria-labelledby="relevanz-title" class="bg-ink-50 section-shell">
+      <div class="container-page">
+        <h2 id="relevanz-title" class="font-display text-2xl text-ink-950">Dieser Case ist für Sie relevant, wenn …</h2>
+        <ul class="mt-6 grid max-w-5xl gap-x-10 gap-y-3 sm:grid-cols-2" role="list">
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">Paid Search hauptsächlich anhand von CPC oder kurzfristigen Abschlüssen bewertet wird</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">unklar ist, ob Search, Shopping und Brand sauber voneinander abgegrenzt sind</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">Conversion-Werte zwischen Shop, Tracking-System und Werbeplattform voneinander abweichen</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">ein Account aus einer vorherigen Betreuung übernommen wurde</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">Kampagnen reduziert oder skaliert werden sollen, bevor eine belastbare Datenbasis vorliegt</span>
+          </li>
+          <li class="flex gap-3">
+            <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+            <span class="text-ink-800">Microsoft Ads bislang nur als kleiner Zusatzkanal betrachtet wird</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== ABSCHLUSS-CTA ===== -->
+    <section aria-labelledby="cta-title" class="brand-gradient-dark py-20 text-white sm:py-24">
+      <div class="container-page">
+        <h2 id="cta-title" class="section-title">
+          Wissen Sie, welche Kampagnen in Ihrem Account wirklich Geld verdienen?
+        </h2>
+        <p class="mt-6 max-w-[64ch] text-lg leading-relaxed text-ink-300">
+          Wir prüfen <a href="/#leistungen" class="underline decoration-ink-600 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white">Google Ads und Microsoft Ads</a> auf Messlücken, strukturelle Ineffizienzen und falsche Budgetsignale und zeigen, wo wirtschaftliches Potenzial aktuell übersehen oder Budget ineffizient eingesetzt wird.
+        </p>
+
+        <div class="mt-10 max-w-4xl border-t border-ink-800 pt-8">
+          <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Was Sie aus der Analyse mitnehmen</h3>
+          <ul class="mt-5 grid gap-x-10 gap-y-3 sm:grid-cols-3" role="list">
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-sm text-ink-200">Die größten Mess- und Steuerungslücken im Account</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-sm text-ink-200">Kampagnen mit auffälligen Budget- oder Performance-Signalen</span>
+            </li>
+            <li class="flex gap-3">
+              <span class="mt-2.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent-600" aria-hidden="true"></span>
+              <span class="text-sm text-ink-200">Priorisierte Handlungsempfehlungen für die nächsten Schritte</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="mt-10">
+          <a href="/#kontakt" class="js-cta btn-on-dark" data-source="case_microsoft_ads_footer">
+            Account-Potenzial prüfen
+          </a>
+          <p class="mt-4 max-w-[62ch] text-sm text-ink-400">
+            Für mittelständische E-Commerce-Unternehmen · Google Ads &amp; Microsoft Ads · Fokus auf <a href="/#leistungen" class="underline decoration-ink-600 underline-offset-4 transition-colors duration-200 hover:text-white hover:decoration-white">Conversion Tracking</a>, ROAS und wirtschaftliche Skalierung
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo" class="bg-ink-950 text-white">
+    <div class="container-page grid gap-10 border-t border-ink-800 py-16 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
+      <div>
+        <img src="../Logos/ddm Logo svg/ddm_Logo_weiß.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+        <p class="mt-4 max-w-[40ch] text-sm text-ink-400">
+          Datengetriebener Growth- und Performance-Partner für Mittelstand, B2B und E-Commerce.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Kontakt</h3>
+        <address class="mt-4 text-sm not-italic leading-relaxed text-ink-300">
+          DDM Data Driven Marketing GmbH<br />
+          Wiesenstr. 21A<br />
+          40549 Düsseldorf<br />
+          <a href="mailto:info@datadrivenmarketing.de" class="hover:text-white">info@datadrivenmarketing.de</a>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Rechtliches</h3>
+        <ul class="mt-4 space-y-2 text-sm text-ink-300" role="list">
+          <li><a href="/impressum" class="hover:text-white">Impressum</a></li>
+          <li><a href="/datenschutz" class="hover:text-white">Datenschutzerklärung</a></li>
+          <li><button type="button" class="text-left hover:text-white" onclick="openConsentBanner(); return false;">Cookie-Einstellungen</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-ink-800">
+      <div class="container-page py-6 text-xs text-ink-400">
+        <p>
+          © <span id="year"></span> DDM Data Driven Marketing GmbH
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="../script.js"></script>
+</body>
+</html>

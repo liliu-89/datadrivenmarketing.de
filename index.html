@@ -1,10 +1,870 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="robots" content="noindex, nofollow">
-    <meta name="robots" content="noai, noimageai">
-  </head>
-  <body>
-    <p>Die Website wird derzeit überarbeitet.</p>
-  </body>
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DDM Data Driven Marketing | Performance-Marketing-Beratung für den Mittelstand</title>
+  <meta name="description" content="DDM klärt zuerst, wer kauft und warum, und leitet daraus Kanäle, Tracking und Budget ab. Performance-Marketing-Beratung für Mittelstand, B2B und E-Commerce." />
+  <meta name="theme-color" content="#1b1e27" />
+  <link rel="canonical" href="https://datadrivenmarketing.de/" />
+
+  <!-- Consent-Banner. Muss vor allem anderen stehen: Das Skript setzt den
+       Consent-Mode-Default auf "denied" und laedt erst danach den Tag Manager.
+       Wird diese Reihenfolge umgestellt, feuern Tags vor der Einwilligung. -->
+  <script src="https://ddm-consent-prod.datadrivenmarketing.workers.dev/v1.1.2/consent.js"
+    integrity="sha384-jBr8HaQIqR9gSQsaV+DHL2rydJ4GyaGCED+fvA4SBF7zEqYxDO3Y6B9Ml+SRMO+2"
+    crossorigin="anonymous"
+    data-gtm="GTM-KN44W5SD"
+    data-site="ddm-website"
+    data-endpoint="https://ddm-consent-prod.datadrivenmarketing.workers.dev/api/consent"
+    data-privacy="/datenschutz"
+    data-imprint="/impressum"
+    data-accent="#3354a1"></script>
+
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="DDM Data Driven Marketing" />
+  <meta property="og:title" content="DDM Data Driven Marketing – Performance-Marketing-Beratung für den Mittelstand" />
+  <meta property="og:description" content="Wir verwandeln Marketing datenbasiert von einem Kostenblock in eine Investition." />
+  <meta property="og:url" content="https://datadrivenmarketing.de/" />
+  <meta property="og:locale" content="de_DE" />
+  <meta property="og:image" content="https://datadrivenmarketing.de/images/data_driven_marketing_Logo_darkgrey_1200x630.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Logo der DDM Data Driven Marketing GmbH" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="Logos/ddm Logo svg/Signet_darkgrey.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="Logos/ddm Logo svg/png/Signet_darkgrey.png" />
+  <!-- TODO: eigenes Favicon-/App-Icon-Set in passenden Zielgrößen aus signet.png ableiten -->
+
+  <link rel="stylesheet" href="dist/output.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "DDM Data Driven Marketing GmbH",
+    "url": "https://datadrivenmarketing.de",
+    "email": "info@datadrivenmarketing.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wiesenstr. 21A",
+      "postalCode": "40549",
+      "addressLocality": "Düsseldorf",
+      "addressCountry": "DE"
+    },
+    "founder": {
+      "@type": "Person",
+      "name": "Li Liu"
+    },
+    "vatID": "DE463319095"
+  }
+  </script>
+</head>
+
+<body class="bg-canvas font-body text-ink-950 antialiased">
+  <a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-control focus:bg-ink-950 focus:px-4 focus:py-2 focus:text-white">
+    Zum Inhalt springen
+  </a>
+
+  <!-- ===== HEADER ===== -->
+  <header id="header" class="sticky top-0 z-40 border-b border-ink-200 transition-shadow duration-200">
+    <div class="container-page flex items-center gap-6 py-4">
+      <a href="#main" class="flex flex-shrink-0 items-center" aria-label="DDM Data Driven Marketing – Startseite">
+        <img src="Logos/ddm Logo svg/ddm_Logo_darkgrey.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+      </a>
+
+      <nav class="ml-auto hidden items-center gap-8 md:flex" aria-label="Hauptnavigation">
+        <a href="#leistungen" class="nav-link">Leistungen</a>
+        <a href="#prozess" class="nav-link">Prozess</a>
+        <a href="#cases" class="nav-link">Cases</a>
+        <a href="#werte" class="nav-link">Werte</a>
+        <a href="/team" class="nav-link">Team</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+      </nav>
+
+      <div class="ml-auto flex items-center gap-3 md:ml-0">
+        <a href="#kontakt" class="btn-primary hidden sm:inline-flex">Analyse anfragen</a>
+        <button
+          class="js-menu-toggle inline-flex h-10 w-10 items-center justify-center rounded-control border border-ink-200 md:hidden"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          aria-label="Menü öffnen"
+        >
+          <span class="relative block h-3.5 w-4" aria-hidden="true">
+            <span class="absolute inset-x-0 top-0 h-[1.5px] bg-ink-950"></span>
+            <span class="absolute inset-x-0 top-1/2 h-[1.5px] -translate-y-1/2 bg-ink-950"></span>
+            <span class="absolute inset-x-0 bottom-0 h-[1.5px] bg-ink-950"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="border-t border-ink-200 bg-white md:hidden">
+      <nav class="container-page flex flex-col py-2" aria-label="Mobile Navigation">
+        <a href="#leistungen" class="border-b border-ink-100 py-3 font-body text-ink-950">Leistungen</a>
+        <a href="#prozess" class="border-b border-ink-100 py-3 font-body text-ink-950">Prozess</a>
+        <a href="#cases" class="border-b border-ink-100 py-3 font-body text-ink-950">Cases</a>
+        <a href="#werte" class="border-b border-ink-100 py-3 font-body text-ink-950">Werte</a>
+        <a href="/team" class="border-b border-ink-100 py-3 font-body text-ink-950">Team</a>
+        <a href="#faq" class="border-b border-ink-100 py-3 font-body text-ink-950">FAQ</a>
+        <a href="#kontakt" class="py-3 font-body font-medium text-accent-600">Analyse anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ===== HERO ===== -->
+    <section class="brand-gradient relative overflow-hidden py-16 sm:py-20 lg:py-28" aria-labelledby="hero-title">
+      <div class="hero-grid absolute inset-0" aria-hidden="true"></div>
+      <div class="container-page relative grid gap-12 lg:grid-cols-[1.15fr_0.85fr] lg:items-start">
+
+        <div class="reveal">
+          <p class="section-eyebrow">Data Driven Marketing</p>
+
+          <h1 id="hero-title" class="js-type display-xl text-ink-950">
+            Datengetriebene Performance-Marketing-Beratung für den Mittelstand
+          </h1>
+
+          <!-- Reihenfolge Problem vor Lösung. Die Größenstufung hängt an der
+               Position, nicht am Inhalt: Der Absatz direkt unter der H1 bleibt
+               der größere, damit von oben nach unten nichts wächst. -->
+          <p class="mt-6 measure text-lg leading-relaxed text-ink-800">
+            „Wir machen viel Marketing, aber wissen nicht genau, was funktioniert.“ Diesen Satz hören wir oft, meist von Geschäftsführern, die Budget freigeben, ohne die Wirkung beurteilen zu können.
+          </p>
+
+          <p class="mt-4 measure leading-relaxed text-ink-800">
+            Wir klären zuerst, wer kauft, warum und an welchem Punkt entschieden wird. Daraus ergibt sich, welche Kanäle, welches Tracking und welches Budget sinnvoll sind.
+          </p>
+
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="#kontakt" class="btn-primary">Analyse anfragen</a>
+            <a href="#leistungen" class="btn-secondary">Leistungen ansehen</a>
+          </div>
+
+          <dl class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
+            <div class="border-l-2 border-ink-300 pl-4">
+              <dt class="font-body text-sm text-ink-800">Fokus</dt>
+              <dd class="mt-1 text-ink-950">Kampagnen werden an qualifizierten Anfragen und Umsatz gemessen.</dd>
+            </div>
+            <div class="border-l-2 border-ink-300 pl-4">
+              <dt class="font-body text-sm text-ink-800">Grundlage</dt>
+              <dd class="mt-1 text-ink-950">Tracking und Conversion-Werte werden geprüft, bevor optimiert wird.</dd>
+            </div>
+            <div class="border-l-2 border-ink-300 pl-4">
+              <dt class="font-body text-sm text-ink-800">Zusammenarbeit</dt>
+              <dd class="mt-1 text-ink-950">Sie arbeiten direkt mit der Person, die Strategie, Kampagnen und Auswertung verantwortet.</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div id="kontakt" class="reveal">
+          <div class="surface overflow-hidden shadow-accent">
+            <div class="bg-ink-950 px-6 py-5">
+              <h2 class="font-body text-lg font-medium text-white" id="kontaktTitel">Analyse anfragen</h2>
+              <p class="mt-1 text-sm text-ink-300">Wir melden uns innerhalb eines Werktags bei Ihnen.</p>
+            </div>
+
+            <!-- data-endpoint ist die einzige Stelle, an der die Adresse des
+                 Backends steht. Sobald die Domain über Cloudflare läuft, wird
+                 daraus "/api/contact": Der Cross-Origin-Aufruf entfällt samt
+                 Preflight, ohne Eingriff in script.js. -->
+            <form id="leadForm" class="flex flex-col gap-5 p-6" novalidate aria-label="Anfrageformular"
+                  data-endpoint="https://ddm-leads-prod.datadrivenmarketing.workers.dev/api/contact">
+              <div class="grid gap-4 sm:grid-cols-2">
+                <div>
+                  <label class="field-label" for="firstName">Vorname <span aria-hidden="true" class="text-error">*</span></label>
+                  <input class="field-input mt-2" id="firstName" name="firstName" type="text" autocomplete="given-name" required aria-required="true" />
+                  <span class="mt-1 block text-sm text-error empty:hidden" id="error-firstName" role="alert" aria-live="polite"></span>
+                </div>
+                <div>
+                  <label class="field-label" for="company">Firma <span aria-hidden="true" class="text-error">*</span></label>
+                  <input class="field-input mt-2" id="company" name="company" type="text" autocomplete="organization" required aria-required="true" />
+                  <span class="mt-1 block text-sm text-error empty:hidden" id="error-company" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div>
+                <label class="field-label" for="email">E-Mail <span aria-hidden="true" class="text-error">*</span></label>
+                <input class="field-input mt-2" id="email" name="email" type="email" autocomplete="email" placeholder="name@firma.de" required aria-required="true" />
+                <span class="mt-1 block text-sm text-error empty:hidden" id="error-email" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div>
+                <label class="field-label" for="budget">Monatliches Ads-Budget <span class="font-normal text-ink-800">(optional)</span></label>
+                <select class="field-input mt-2" id="budget" name="budget">
+                  <option value="">Keine Angabe</option>
+                  <option value="unter-5k">Unter 5.000 €</option>
+                  <option value="5-10k">5.000–10.000 €</option>
+                  <option value="10-30k">10.000–30.000 €</option>
+                  <option value="30k+">30.000 €+</option>
+                </select>
+              </div>
+
+              <div class="flex items-start gap-3 rounded-control bg-ink-50 p-4">
+                <input class="mt-1 h-4 w-4 flex-shrink-0 accent-accent-600" id="consent" name="consent" type="checkbox" required aria-required="true" />
+                <label class="text-sm text-ink-800" for="consent">
+                  Ich stimme zu, dass meine Angaben gespeichert und zur Bearbeitung meiner
+                  Anfrage verwendet werden. Die Einwilligung kann ich jederzeit per E-Mail
+                  widerrufen. Einzelheiten in der
+                  <a href="/datenschutz" class="text-accent-700 underline underline-offset-2 hover:text-ink-950">Datenschutzerklärung</a>.
+                </label>
+              </div>
+              <span class="text-sm text-error empty:hidden" id="error-consent" role="alert" aria-live="polite"></span>
+
+              <!-- Honeypot: liegt außerhalb des Viewports und ist für Menschen weder
+                   sichtbar noch per Tastatur erreichbar. Wird das Feld befüllt, meldet der
+                   Worker Erfolg und speichert nicht. autocomplete="off" verhindert, dass ein
+                   Passwortmanager es ausfüllt und damit echte Anfragen aussperrt. -->
+              <div class="honeypot" aria-hidden="true">
+                <label for="website">Website (bitte frei lassen)</label>
+                <input id="website" name="website" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button class="btn-primary w-full" type="submit">Analyse anfragen</button>
+
+              <p class="form-notice" id="formGlobal" role="alert" aria-live="polite"></p>
+
+              <p class="text-xs text-ink-800">Keine Weitergabe an Dritte.</p>
+            </form>
+
+            <!-- Erfolgszustand. Tritt an die Stelle des Formulars, statt unter
+                 ihm zu erscheinen: Ein geleertes Formular, das stehen bleibt,
+                 liest sich mehrdeutig und lädt zum zweiten Absenden ein.
+                 Sichtbarkeit über .is-visible, siehe src/input.css. -->
+            <div class="form-success p-6 sm:p-7" id="formSuccess" role="status" tabindex="-1">
+              <span class="flex h-12 w-12 items-center justify-center rounded-full bg-success/10" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-success">
+                  <path d="M20 6 9 17l-5-5" />
+                </svg>
+              </span>
+
+              <h3 class="mt-5 font-display text-2xl text-ink-950">Ihre Anfrage ist angekommen</h3>
+
+              <p class="measure mt-3 text-ink-800">
+                Wir melden uns <strong>innerhalb eines Werktags</strong> bei Ihnen und
+                schlagen einen Termin für ein erstes Gespräch vor.
+              </p>
+
+              <p class="measure mt-3 text-ink-700">
+                Falls unsere Antwort nicht ankommt, schauen Sie bitte auch in den Spam-Ordner.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== KUNDEN / VERTRAUENSLEISTE =====
+         Vorläufig: alle vorhandenen Kundenlogos eingebunden. Freigabe zur
+         öffentlichen Nennung steht bei den einzelnen Kunden noch aus –
+         einzelne Logos werden ggf. nach Rückmeldung wieder entfernt. -->
+    <section aria-labelledby="kunden-title" class="overflow-hidden border-y border-ink-200 py-12">
+      <div class="container-page">
+        <h2 id="kunden-title" class="mb-8 text-center font-body text-sm font-medium uppercase tracking-wide text-ink-700">
+          Unternehmen, die bereits mit uns gearbeitet haben
+        </h2>
+      </div>
+
+      <p class="sr-only">
+        Unternehmen, die bereits mit uns gearbeitet haben: CALCUSO, Goldschatz, Heimundgarten24, JUENGER, La mer, Leben braucht Bewegung, Office Hour Aid, ProtaGene, Zahnarztpraxis im Medienhafen, growth pilots, localtrade, notable nannies</p>
+
+      <ul class="logo-marquee-track gap-16" role="list" aria-hidden="true">
+        <li><img src="Logos/Logos für Logo Bar/CALCUSO.png" alt="CALCUSO" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Goldschatz.png" alt="Goldschatz" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Heimundgarten24.png" alt="Heimundgarten24" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/JUENGER.png" alt="JUENGER" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/La mer.png" alt="La mer" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Leben braucht Bewegung.png" alt="Leben braucht Bewegung" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Office Hour Aid.png" alt="Office Hour Aid" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/ProtaGene.png" alt="ProtaGene" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Zahnarztpraxis im Medienhafen.png" alt="Zahnarztpraxis im Medienhafen" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/growth pilots.png" alt="growth pilots" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/localtrade.png" alt="localtrade" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/notable nannies.png" alt="notable nannies" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <!-- Duplikat für nahtlosen Loop (dekorativ, bereits über aria-hidden auf dem Elternelement verborgen) -->
+        <li><img src="Logos/Logos für Logo Bar/CALCUSO.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Goldschatz.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Heimundgarten24.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/JUENGER.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/La mer.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Leben braucht Bewegung.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Office Hour Aid.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/ProtaGene.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/Zahnarztpraxis im Medienhafen.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/growth pilots.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/localtrade.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+        <li><img src="Logos/Logos für Logo Bar/notable nannies.png" alt="" width="160" height="80" loading="lazy" class="h-[60px] w-[120px] object-contain opacity-60 grayscale transition duration-200 hover:opacity-100 hover:grayscale-0" /></li>
+      </ul>
+    </section>
+
+    <!-- ===== PROBLEM ===== -->
+    <section id="problem" aria-labelledby="problem-title" class="section-shell">
+      <div class="container-page section-grid">
+        <div class="section-aside">
+          <h2 id="problem-title" class="section-title">
+            Belastbare Datenbasis für Marketingentscheidungen
+          </h2>
+          <p class="section-lead">
+            Viele Marketingentscheidungen basieren auf unvollständigen Daten. Deshalb prüfen wir zuerst, welche Zahlen belastbar sind und welche Entscheidungen sie tatsächlich ermöglichen.
+          </p>
+        </div>
+        <div class="section-main">
+          <p class="measure text-lg leading-relaxed text-ink-800">
+            In den meisten Accounts, die wir übernehmen, sind es dieselben drei Muster:
+          </p>
+          <ul class="mt-10 grid gap-6" role="list">
+            <li class="surface p-6">
+              <p class="text-ink-800">Niemand kann klar sagen, welche Kunden wirklich profitabel sind und was sie zum Kauf bewegt hat.</p>
+            </li>
+            <li class="surface p-6">
+              <p class="text-ink-800">Vertrieb und Marketing bewerten dieselben Leads unterschiedlich, weil beide auf verschiedene Zahlen schauen.</p>
+            </li>
+            <li class="surface p-6">
+              <p class="text-ink-800">Das Reporting zeigt Reichweite und Klicks, aber keine Kennzahl, mit der die Geschäftsführung eine Budgetentscheidung treffen kann.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Customer Profiling und Customer Journey standen bis hier als eigene
+         Sektion. Sie sind vollständig nach /marketing-audit umgezogen:
+         Auf der Startseite waren sie mit 202 Wörtern und 1417px der größte
+         Block der Seite. Verlinkt wird jetzt kontextuell aus der
+         Leistungskarte "Analyse & Customer Understanding" und aus
+         Prozess-Phase 01. -->
+
+    <!-- ===== STATEMENT-MOMENT =====
+         Zitat-Karte nach dem Muster der Design Guidelines. Der Sektionsgrund
+         nutzt accent-50 – die Guidelines führen "Hintergrundabgrenzung"
+         ausdrücklich als Einsatzzweck der Sekundärfarbe. Gegen den blassblauen
+         Grund steht die weiße Karte deutlicher als gegen den grauen Canvas. -->
+    <section aria-label="Kernaussage" class="brand-gradient-soft section-shell">
+      <div class="container-page">
+        <figure class="surface mx-auto max-w-2xl px-8 py-12 sm:px-14 sm:py-16">
+          <span class="quote-mark" aria-hidden="true">&rdquo;</span>
+          <!-- Der Umbruch ab sm ist gesetzt, nicht überlassen: Bei freiem
+               Umbruch endet die erste Zeile auf „und", und eine hängende
+               Konjunktion fällt bei 41px Loretta deutlich auf. text-wrap
+               balance und pretty ändern daran nichts, sie optimieren auf
+               gleiche Zeilenlängen, nicht auf sinnvolle Bruchstellen.
+               Unterhalb sm bleibt der Bruch aus – dort ist die Karte zu
+               schmal, der erzwungene Bruch ergäbe vier statt drei Zeilen.
+               Das Leerzeichen vor dem <br> muss stehen bleiben, sonst
+               klebt „Nachfrage,und" zusammen, sobald der Bruch entfällt. -->
+          <blockquote class="quote-text">
+            Wo entsteht <span class="font-bold italic text-accent-600">Nachfrage</span>, <br class="hidden sm:inline" />und wie holen wir sie zu uns?&ldquo;
+          </blockquote>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== LEISTUNGEN ===== -->
+    <section id="leistungen" aria-labelledby="leistungen-title" class="section-shell">
+      <div class="container-page">
+        <div class="section-head">
+          <p class="section-eyebrow">Leistungen</p>
+          <h2 id="leistungen-title" class="section-title">Performance Marketing, Tracking und Analyse</h2>
+          <p class="section-lead">
+            Sechs Arbeitsbereiche, die sich in den meisten Projekten gegenseitig bedingen. Welche davon zum Einsatz kommen, ergibt die Analyse.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2">
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">Analyse &amp; Customer Understanding</h3>
+            <p class="mt-3 text-ink-800">
+              Wir klären, wer kauft, was den Kauf auslöst und wo Wachstum wirtschaftlich skalierbar ist. Daraus entstehen Kundenprofil, Customer Journey und die Kennzahlen für alles Weitere.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">Customer&nbsp;Profiling · Customer&nbsp;Journey · KPI-System</p>
+            <p class="mt-4">
+              <a href="/marketing-audit" class="font-body text-sm text-accent-600 underline-offset-4 hover:text-ink-950 hover:underline">Wie die Analyse abläuft →</a>
+            </p>
+          </article>
+
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">Tracking &amp; Datenarchitektur</h3>
+            <p class="mt-3 text-ink-800">
+              Wir sorgen dafür, dass Käufe und Conversion-Werte zuverlässig im Werbekonto ankommen. Was beim nächsten Plattform-Update bricht, bauen wir gar nicht erst ein.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">GA4 · Google&nbsp;Tag&nbsp;Manager · serverseitiges Tracking · Attribution</p>
+          </article>
+
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">Performance Marketing</h3>
+            <p class="mt-3 text-ink-800">
+              Wir strukturieren Kampagnen entlang der Frage, ab welchem Punkt zusätzliches Budget noch profitabel arbeitet. Die Priorisierung folgt dem Deckungsbeitrag je Kampagne.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">Google&nbsp;Ads · Performance&nbsp;Max · Search · Retargeting</p>
+          </article>
+
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">Organische Sichtbarkeit</h3>
+            <p class="mt-3 text-ink-800">
+              Wir arbeiten an Struktur und Inhalten, damit Sie dort auffindbar sind, wo die Suche beginnt. Dazu gehört inzwischen auch die Sichtbarkeit in KI-Suchsystemen.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">SEO · AI&nbsp;Visibility</p>
+          </article>
+
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">Website &amp; Conversion</h3>
+            <p class="mt-3 text-ink-800">
+              Wir arbeiten an Funnel, Checkout und Landingpages, um aus dem vorhandenen Traffic mehr Abschlüsse zu holen. Das ist in der Regel günstiger als zusätzliche Reichweite einzukaufen.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">CRO · Landingpages · Funnel-Analyse</p>
+          </article>
+
+          <article class="surface p-7 sm:p-8">
+            <h3 class="font-body text-lg font-medium text-ink-950">CRM &amp; Marketing-Sales-Verzahnung</h3>
+            <p class="mt-3 text-ink-800">
+              Wir bringen Marketing- und Vertriebszahlen auf eine gemeinsame Grundlage. So wird Leadqualität sichtbar und Rückmeldungen aus dem Vertrieb fließen in die Kampagnensteuerung zurück.
+            </p>
+            <p class="mt-4 font-body text-sm text-ink-700">Leadqualität · Rückkopplung aus dem Vertrieb</p>
+          </article>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ===== PROZESS ===== -->
+    <section id="prozess" aria-labelledby="prozess-title" class="brand-gradient-dark section-shell text-white">
+      <div class="container-page">
+        <div class="section-head">
+          <h2 id="prozess-title" class="section-title text-white">So arbeiten wir</h2>
+          <p class="section-lead text-ink-300">
+            Analyse, Setup und Skalierung bauen aufeinander auf. Jede Phase liefert ein eigenes Ergebnis.
+          </p>
+        </div>
+
+        <ol class="grid gap-10 sm:grid-cols-3 sm:gap-8" role="list">
+          <li class="border-t border-ink-800 pt-6">
+            <span class="font-display text-2xl text-ink-600" aria-hidden="true">01</span>
+            <h3 class="mt-3 font-body text-lg font-medium">Analyse &amp; Diagnose</h3>
+            <p class="mt-3 text-ink-300">
+              Wir klären zuerst, wer kauft und warum: Customer Profiling aus CRM-, Vertriebs- und Suchdaten, daraus die Customer Journey. Parallel prüfen wir Kampagnenstruktur, Tracking und Datenqualität.
+            </p>
+            <p class="mt-4 text-sm text-ink-400"><strong class="font-medium text-ink-200">Ergebnis:</strong> wo Nachfrage entsteht, wie entschieden wird, wo Wachstum verloren geht</p>
+            <!-- accent-300 statt accent-600. Der Verlauf endet auf accent-800
+                 und ist an dieser Stelle deutlich heller als sein Anfang:
+                 accent-400 kommt dort nur auf 3,64:1 und fällt unter AA,
+                 accent-300 liegt bei 5,21:1. Gemessen wird gegen das helle
+                 Ende des Verlaufs, also den ungünstigsten Fall. -->
+            <p class="mt-4">
+              <a href="/marketing-audit" class="font-body text-sm text-accent-300 underline-offset-4 hover:text-white hover:underline">Wie die Analyse abläuft →</a>
+            </p>
+          </li>
+          <li class="border-t border-ink-800 pt-6">
+            <span class="font-display text-2xl text-ink-600" aria-hidden="true">02</span>
+            <h3 class="mt-3 font-body text-lg font-medium">Setup &amp; Systemaufbau</h3>
+            <p class="mt-3 text-ink-300">
+              Dann entsteht die Grundlage für spätere Skalierung: belastbares Conversion-Tracking, eine nach Suchintention getrennte Kampagnenstruktur und Kennzahlen, die eine Budgetentscheidung tragen. Was gebaut wird, richtet sich nach der Journey aus der Analyse.
+            </p>
+            <p class="mt-4 text-sm text-ink-400"><strong class="font-medium text-ink-200">Ziel:</strong> stabiles Fundament für Skalierung</p>
+          </li>
+          <li class="border-t border-ink-800 pt-6">
+            <span class="font-display text-2xl text-ink-600" aria-hidden="true">03</span>
+            <h3 class="mt-3 font-body text-lg font-medium">Skalierung &amp; Optimierung</h3>
+            <p class="mt-3 text-ink-300">
+              Erst danach wird Budget erhöht. Erhöhungen folgen einer vorher festgelegten Kennzahl, damit im Nachhinein nachvollziehbar bleibt, worauf die Entscheidung beruhte.
+            </p>
+            <p class="mt-4 text-sm text-ink-400"><strong class="font-medium text-ink-200">Ziel:</strong> planbare Skalierung, nachhaltiges Wachstum</p>
+          </li>
+        </ol>
+        
+      </div>
+    </section>
+
+    <!-- ===== DIFFERENZIERUNG ===== -->
+    <section id="differenzierung" aria-labelledby="diff-title" class="section-shell bg-white">
+      <div class="container-page">
+        <!-- Frueher zweispaltig, mit einer Grafik rechts neben dem Text. Die
+             Grafik war ein Platzhalter und ist ersatzlos entfallen; der
+             Zweispalter mit ihr, sonst saesse der Text in 1,15 von zwei
+             Spalten und rechts bliebe eine leere Flaeche. Kommt spaeter ein
+             echtes Bild dazu, gehoert das Raster wieder her. -->
+        <div>
+          <h2 id="diff-title" class="section-title">
+            Strategische Beratung und operative Umsetzung
+          </h2>
+          <p class="section-lead">
+            Wir begleiten Unternehmen strategisch und steigen dort operativ ein, wo es für das Wachstum entscheidend ist.
+          </p>
+          <p class="measure mt-5 leading-relaxed text-ink-800">
+            Strategie, Umsetzung, Tracking und Datenverantwortung liegen bei derselben Instanz. Sie sprechen mit der Person, die Ihre Kampagnen tatsächlich betreut. Es gibt keine Zwischenebene, die den Kontext erst weitergeben müsste.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== BEWEIS-BAND (Peak der Seite) ===== -->
+    <section aria-labelledby="kennzahlen-title" class="brand-gradient-accent section-shell relative overflow-hidden text-white">
+      <img src="Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+           class="signet-watermark -right-16 -top-16 w-72 sm:w-96" />
+
+      <div class="container-page relative">
+        <h2 id="kennzahlen-title" class="section-title text-white">
+          Kennzahlen aus laufenden Projekten
+        </h2>
+
+        <!-- Kacheln auf der blauen Fläche statt Spalten mit Trennstrich:
+             weiß/10 mit heller Kante liest sich auf accent-600 als erhaben,
+             ohne eine vierte Farbe einzuführen. -->
+        <dl class="mt-14 grid gap-4 sm:mt-16 sm:grid-cols-3">
+          <div class="rounded-card border border-ink-800 bg-ink-900 p-6 sm:p-7">
+            <dt class="sr-only">Umsatz je eingesetztem Werbe-Euro, ROAS, von 4,44-fach im 1. Monat auf 9,17-fach, Microsoft Ads</dt>
+            <dd class="stat-numeral">9,17×</dd>
+            <p class="mt-3 text-sm leading-relaxed text-ink-100">Umsatz je eingesetztem Werbe-Euro (ROAS)<br />von 4,44× im 1.&nbsp;Monat, Microsoft&nbsp;Ads</p>
+          </div>
+          <div class="rounded-card border border-ink-800 bg-ink-900 p-6 sm:p-7">
+            <dt class="sr-only">85 Prozent der Terminbuchungen aus unseren Suchkampagnen für den identifizierten Bedarf, Google Ads, Gesundheitsbereich</dt>
+            <dd class="stat-numeral">85&nbsp;%</dd>
+            <p class="mt-3 text-sm leading-relaxed text-ink-100">der Terminbuchungen aus unseren Suchkampagnen für den identifizierten Bedarf<br />Google&nbsp;Ads, Gesundheitsbereich</p>
+          </div>
+          <div class="rounded-card border border-ink-800 bg-ink-900 p-6 sm:p-7">
+            <dt class="sr-only">Akquisekosten je Bestellung, CPA, mehr als halbiert, von 717 Euro auf 302 Euro, Microsoft Ads</dt>
+            <dd class="stat-numeral">−58&nbsp;%</dd>
+            <p class="mt-3 text-sm leading-relaxed text-ink-100">Akquisekosten je Bestellung (CPA) mehr als halbiert<br />von 717&nbsp;€ auf 302&nbsp;€, Microsoft&nbsp;Ads</p>
+          </div>
+        </dl>
+
+        <p class="display-md mt-16 max-w-4xl text-ink-100 sm:mt-20">
+          „Hinter jeder dieser Zahlen steht eine Entscheidung, die vorher durch Daten begründet war.“
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== CASES ===== -->
+    <section id="cases" aria-labelledby="cases-title" class="section-shell">
+      <div class="container-page">
+        <div class="section-head">
+          <h2 id="cases-title" class="section-title">Ausgewählte Projekte</h2>
+          <p class="section-lead">
+            Zwei Projekte aus laufender oder abgeschlossener Zusammenarbeit, jeweils mit den Kennzahlen, die der Bewertung zugrunde lagen.
+          </p>
+        </div>
+
+        <div class="grid gap-6 sm:grid-cols-2 sm:grid-rows-[auto_auto] sm:gap-y-0">
+
+          <!-- Beide Karten teilen dieselbe Bauweise: weiße Fläche mit dunklem
+               Kopfbereich. Die Microsoft-Karte war zuvor durchgehend dunkel,
+               weil sie als einzige einen Link trug. Seit beide verlinkt sind,
+               hat die Sonderstellung keine Grundlage mehr. -->
+
+          <!-- Case 1: Microsoft Ads / E-Commerce -->
+          <article class="surface surface-lift overflow-hidden sm:grid sm:row-span-2 sm:grid-rows-subgrid">
+            <div class="relative overflow-hidden bg-ink-950 p-6">
+              <img src="Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+                   class="signet-watermark -right-8 -top-8 w-40" />
+              <div class="flex flex-wrap gap-2">
+                <span class="pill">Microsoft Ads</span>
+                <span class="pill">E-Commerce</span>
+              </div>
+              <h3 class="mt-4 font-body text-lg font-medium text-white">Microsoft-Ads-Account von 4,44&times; auf 9,17&times; ROAS entwickelt</h3>
+              <p class="mt-2 text-sm text-ink-400">Übernommen mit strukturellen Altlasten und unvollständiger Umsatzmessung, dann Schritt für Schritt wirtschaftlicher gemacht.</p>
+            </div>
+            <div class="p-6">
+              <div class="-mx-6 flex divide-x divide-ink-200 border-y border-ink-200 px-6 py-4">
+                <div class="flex-1 pr-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">Conversion-Wert</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">47k€</p>
+                  <p class="text-xs text-ink-700">im 4. Monat</p>
+                </div>
+                <div class="flex-1 px-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">ROAS</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">9,17×</p>
+                  <p class="text-xs text-ink-700">im 4. Monat</p>
+                </div>
+                <div class="flex-1 pl-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">KUR</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">10,9&nbsp;%</p>
+                  <p class="text-xs text-ink-700">im 4. Monat</p>
+                </div>
+              </div>
+              <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+                <span class="pill-accent">ROAS von 4,44&times; auf 9,17&times; gesteigert</span>
+                <a href="/cases/microsoft-ads-profitabel-machen" class="btn-secondary px-4 py-2 text-sm">Microsoft-Ads-Case lesen →</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Case 2: Google Ads / Medizin-Leadgen – verlinkt -->
+          <article class="surface surface-lift overflow-hidden sm:grid sm:row-span-2 sm:grid-rows-subgrid">
+            <div class="relative overflow-hidden bg-ink-950 p-6">
+              <img src="Logos/ddm Logo svg/Signet_weiß.svg" alt="" aria-hidden="true" width="182" height="181"
+                   class="signet-watermark -right-8 -top-8 w-40" />
+              <div class="flex flex-wrap gap-2">
+                <span class="pill">Google Ads</span>
+                <span class="pill">Medizin / Leads</span>
+              </div>
+              <h3 class="mt-4 font-body text-lg font-medium text-white">Google-Ads-Konto vom Traffic-Kanal zum Lead-System entwickelt</h3>
+              <p class="mt-2 text-sm text-ink-400">Übernommen mit breit streuender Struktur und einem einzigen Conversion-Signal, dann nach Suchintention neu aufgebaut.</p>
+            </div>
+            <div class="p-6">
+              <!-- Drei Dimensionen statt drei Volumenzahlen: Reichweite,
+                   Bündelung, Nachweisbarkeit. Die 23 steht als Beleg für die
+                   Rückverfolgbarkeit, nicht als Mengenangabe – deshalb das
+                   Label. Die 43,7 % gelten für die High-Intent-Kampagne, der
+                   Vorher-Wert fürs Gesamtkonto; das Sublabel sagt „kontoweit",
+                   damit der Unterschied sichtbar bleibt. -->
+              <div class="-mx-6 flex divide-x divide-ink-200 border-y border-ink-200 px-6 py-4">
+                <div class="flex-1 pr-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">Sichtbarkeit Kernnachfrage</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">43,7&nbsp;%</p>
+                  <p class="text-xs text-ink-700">zuvor &lt;10&nbsp;% kontoweit</p>
+                </div>
+                <div class="flex-1 px-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">Buchungen</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">85&nbsp;%</p>
+                  <p class="text-xs text-ink-700">aus Brand + lokaler Suche</p>
+                </div>
+                <div class="flex-1 pl-4">
+                  <p class="font-body text-xs uppercase tracking-wide text-ink-700">Termine verknüpft</p>
+                  <p class="mt-1 font-display text-2xl tabular-nums text-ink-950">23</p>
+                  <p class="text-xs text-ink-700">bis zur Anzeige rückverfolgbar</p>
+                </div>
+              </div>
+              <div class="mt-5 flex flex-wrap items-center justify-between gap-3">
+                <span class="pill-accent">Tracking bis zum wahrgenommenen Termin</span>
+                <a href="/cases/google-ads-leadgenerierung" class="btn-secondary px-4 py-2 text-sm">Google-Ads-Case lesen →</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- ===== WERTE ===== -->
+    <section id="werte" aria-labelledby="werte-title" class="section-shell bg-ink-100">
+      <div class="container-page">
+        <div class="section-head">
+          <h2 id="werte-title" class="section-title">Wie wir entscheiden</h2>
+          <p class="section-lead">
+            Vier Grundsätze, an denen sich Empfehlungen und Berichte messen lassen.
+          </p>
+        </div>
+
+        <dl class="grid gap-6 sm:grid-cols-2">
+          <div class="surface p-6 sm:p-7">
+            <dt class="font-body text-lg font-medium text-ink-950">Daten vor Meinung</dt>
+            <dd class="mt-2 text-ink-700">Wenn Zahlen aus Shop, Tracking und Werbekonto voneinander abweichen, klären wir die Abweichung, bevor wir eine Empfehlung geben. Auch dann, wenn das Ergebnis gegen unsere eigene Einschätzung ausfällt.</dd>
+          </div>
+          <div class="surface p-6 sm:p-7">
+            <dt class="font-body text-lg font-medium text-ink-950">Qualität vor Gefälligkeit</dt>
+            <dd class="mt-2 text-ink-700">Wenn eine Kampagne nicht funktioniert, sagen wir das im nächsten Gespräch und nennen die Zahl, an der wir es festmachen. Auch wenn die Maßnahme auf Ihren Wunsch zurückgeht.</dd>
+          </div>
+          <div class="surface p-6 sm:p-7">
+            <dt class="font-body text-lg font-medium text-ink-950">Transparenz</dt>
+            <dd class="mt-2 text-ink-700">Sie sehen pro Kampagne, welches Budget geflossen ist und welcher Umsatz zugeordnet wurde. Werbekonten und Tracking-Setup laufen auf Ihre Zugänge.</dd>
+          </div>
+          <div class="surface p-6 sm:p-7">
+            <dt class="font-body text-lg font-medium text-ink-950">Verantwortung</dt>
+            <dd class="mt-2 text-ink-700">Vor jeder Budgeterhöhung steht eine Kennzahl, die den Schritt trägt. Bleibt sie aus, empfehlen wir, das Budget zu halten oder zu senken.</dd>
+          </div>
+        </dl>
+        
+      </div>
+    </section>
+
+    <!-- ===== ZIELGRUPPEN-FIT ===== -->
+    <section id="zielgruppe" aria-labelledby="zielgruppe-title" class="section-shell">
+      <div class="container-page">
+        <div class="section-head">
+          <h2 id="zielgruppe-title" class="section-title">
+            Für wen die Zusammenarbeit geeignet ist
+          </h2>
+          <p class="section-lead">
+            Am besten passt die Zusammenarbeit, wenn bereits Marketing läuft und die Datengrundlage noch nicht trägt.
+          </p>
+        </div>
+          <ul class="grid gap-4 sm:grid-cols-2" role="list">
+            <li class="surface p-6">
+              <p class="font-body font-medium text-ink-950">10–200 Mitarbeitende</p>
+              <p class="mt-1 text-sm text-ink-700">optional bis 500, ca. 3–50 Mio. € Jahresumsatz</p>
+            </li>
+            <li class="surface p-6">
+              <p class="font-body font-medium text-ink-950">Website, Ads &amp; CRM vorhanden</p>
+              <p class="mt-1 text-sm text-ink-700">aber kein sauberes Tracking</p>
+            </li>
+            <li class="surface p-6">
+              <p class="font-body font-medium text-ink-950">1–2 Marketingmitarbeitende</p>
+              <p class="mt-1 text-sm text-ink-700">oder ein kürzlich reduziertes Team</p>
+            </li>
+            <li class="surface-accent p-6">
+              <p class="font-body font-medium text-white">B2B-Industrie &amp; E-Commerce</p>
+              <p class="mt-1 text-sm text-ink-200">besonders hoher Fit laut bisherigen Projekten</p>
+            </li>
+          </ul>
+        
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section id="faq" aria-labelledby="faq-title" class="section-shell bg-ink-100">
+      <div class="container-page section-grid">
+        <div class="section-aside">
+          <h2 id="faq-title" class="section-title">Häufige Fragen</h2>
+        </div>
+
+        <div class="section-main">
+        <div class="grid gap-3">
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-1">
+                <span>Ab welchem Budget ergibt eine Zusammenarbeit Sinn?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-1">
+              <p class="measure text-ink-700">Das hängt vom Geschäftsmodell, den Zielen und dem aktuellen Stand Ihres Trackings ab. Entscheidend ist, dass Angebot und Tracking so weit stehen, dass sich Optimierung auf einer belastbaren Datenbasis lohnt. Das klären wir im ersten Gespräch.</p>
+            </div>
+          </div>
+
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-2">
+                <span>Wie läuft die Zusammenarbeit konkret ab?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-2">
+              <p class="measure text-ink-700">In drei Phasen: Analyse &amp; Diagnose, Setup &amp; Systemaufbau, Skalierung &amp; Optimierung. Sie erhalten aus der Analysephase klare Prioritäten, bevor mit dem Aufbau begonnen wird.</p>
+            </div>
+          </div>
+
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-3">
+                <span>Was genau passiert in der Analysephase?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-3">
+              <p class="measure text-ink-700">Wir bauen aus vorhandenen Daten ein Bild Ihrer tatsächlichen Kunden: CRM, Abschlüsse, Vertriebserfahrung, Suchanfragen, Analytics. Daraus ergibt sich die Customer Journey.</p>
+            </div>
+          </div>
+
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-4">
+                <span>Wir haben kein eigenes Marketingteam. Ist das ein Problem?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-4">
+              <p class="measure text-ink-700">Nein. DDM arbeitet gerade mit Unternehmen, in denen ein bis zwei Personen Marketing verantworten, und ergänzt dieses Team als externe, strategisch mitdenkende Instanz.</p>
+            </div>
+          </div>
+
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-5">
+                <span>Wie transparent wird über Ergebnisse berichtet?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-5">
+              <p class="measure text-ink-700">Vollständig: Sie erfahren, warum Entscheidungen getroffen werden, welche Maßnahmen funktionieren, welche nicht und wo Budget effizient eingesetzt wird.</p>
+            </div>
+          </div>
+
+          <div class="surface px-6">
+            <h3>
+              <button class="faq__btn group flex w-full items-center justify-between gap-4 py-5 text-left font-body text-ink-950 transition-colors aria-expanded:text-accent-600" type="button" aria-expanded="false" aria-controls="faq-6">
+                <span>Für welche Branchen ist DDM besonders geeignet?</span>
+                <span class="relative flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full border border-ink-300 transition-colors group-aria-expanded:border-accent-600" aria-hidden="true">
+                  <span class="absolute h-[1.5px] w-2.5 bg-current"></span>
+                  <span class="absolute h-2.5 w-[1.5px] bg-current transition-transform duration-200 ease-in-out group-aria-expanded:rotate-90 group-aria-expanded:opacity-0"></span>
+                </span>
+              </button>
+            </h3>
+            <div class="faq__panel" id="faq-6">
+              <p class="measure text-ink-700">Besonders hoher Fit laut bisherigen Projekten: B2B-Industrie (z.&nbsp;B. Maschinenbau, technische Dienstleistungen) und mittelgroßer E-Commerce mit 1–20 Mio.&nbsp;€ Umsatz.</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABSCHLUSS-CTA ===== -->
+    <section aria-labelledby="cta-title" class="brand-gradient-dark section-shell text-white">
+      <div class="container-page grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center lg:gap-16">
+        <div>
+          <h2 id="cta-title" class="display-lg">Erstgespräch vereinbaren</h2>
+          <p class="measure mt-4 text-lg leading-relaxed text-ink-300">
+            Im ersten Gespräch klären wir Ihre Ziele, die vorhandene Datenbasis und die laufenden Kampagnen. Sie erhalten eine erste Einschätzung zur aktuellen Ausgangslage und zu sinnvollen nächsten Schritten.
+          </p>
+        </div>
+        <div>
+          <a href="#kontakt" class="btn-on-dark js-cta" data-source="final_cta">Analyse anfragen</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer role="contentinfo" class="bg-ink-950 text-white">
+    <div class="container-page grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
+      <div>
+        <img src="Logos/ddm Logo svg/ddm_Logo_weiß.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+        <p class="mt-4 text-sm text-ink-400">
+          Datengetriebener Growth- und Performance-Partner für Mittelstand, B2B und E-Commerce.
+        </p>
+      </div>
+
+      <div>
+        <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Kontakt</h3>
+        <address class="mt-4 text-sm not-italic leading-relaxed text-ink-300">
+          DDM Data Driven Marketing GmbH<br />
+          Wiesenstr. 21A<br />
+          40549 Düsseldorf<br />
+          <a href="mailto:info@datadrivenmarketing.de" class="hover:text-white">info@datadrivenmarketing.de</a>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="font-body text-sm font-medium uppercase tracking-wide text-ink-400">Rechtliches</h3>
+        <ul class="mt-4 space-y-2 text-sm text-ink-300" role="list">
+          <li><a href="/impressum" class="hover:text-white">Impressum</a></li>
+          <li><a href="/datenschutz" class="hover:text-white">Datenschutzerklärung</a></li>
+          <li><button type="button" class="text-left hover:text-white" onclick="openConsentBanner(); return false;">Cookie-Einstellungen</button></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-ink-800">
+      <div class="container-page py-6 text-xs text-ink-400">
+        <p>
+          © <span id="year"></span> DDM Data Driven Marketing GmbH
+        </p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
 </html>
