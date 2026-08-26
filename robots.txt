@@ -1,20 +1,13 @@
+# Produktionsdomain. Crawling ist erlaubt, auch fuer KI-Crawler:
+# DDM bietet AI Visibility als Leistung an, die eigenen Inhalte dafuer zu
+# sperren waere schwer zu erklaeren.
+#
+# Impressum und Datenschutzerklaerung tragen noindex im Quelltext und stehen
+# deshalb nicht in der Sitemap. Gesperrt sind sie hier bewusst nicht: Eine
+# per robots.txt gesperrte URL kann Google nicht abrufen und damit das
+# noindex nicht lesen.
+
 User-agent: *
-Disallow: /
+Allow: /
 
-User-agent: GPTBot
-Disallow: /
-
-User-agent: ChatGPT-User
-Disallow: /
-
-User-agent: Google-Extended
-Disallow: /
-
-User-agent: PerplexityBot
-Disallow: /
-
-User-agent: ClaudeBot
-Disallow: /
-
-User-agent: anthropic-ai
-Disallow: /
+Sitemap: https://datadrivenmarketing.de/sitemap.xml
