@@ -95,6 +95,7 @@
           "name": "Li Liu"
       },
       "vatID": "DE463319095",
+      "award": "Google Partner",
       "identifier": [
           {
               "@type": "PropertyValue",
@@ -122,6 +123,7 @@
       <a href="#main" class="flex flex-shrink-0 items-center" aria-label="DDM Data Driven Marketing – Startseite">
         <img src="Logos/ddm Logo svg/ddm_Logo_darkgrey.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
       </a>
+
 
       <nav class="ml-auto hidden items-center gap-8 md:flex" aria-label="Hauptnavigation">
         <a href="#leistungen" class="nav-link">Leistungen</a>
@@ -196,6 +198,25 @@
           <div class="mt-8 flex flex-wrap gap-4">
             <a href="#kontakt" class="btn-primary">Analyse anfragen</a>
             <a href="#leistungen" class="btn-secondary">Leistungen ansehen</a>
+          </div>
+
+          <!-- Google-Partner-Badge im Hero, eine von vier Stellen; die
+               uebrigen stehen im Footer jeder Seite, auf
+               /leistungen/google-ads/ und auf team.html.
+               Bewusst ohne loading="lazy": Das Bild steht ueber der Falz, ein
+               verzoegertes Nachladen waere hier ein Rueckschritt.
+               Der Textlink darunter ist auf Wunsch entfallen - das Badge
+               selbst bleibt verlinkt, das verlangen Googles Regeln. -->
+          <div class="mt-10 flex items-center gap-4">
+            <a href="https://www.google.com/partners/agency?id=7275523841"
+               target="_blank" rel="noopener" class="inline-flex shrink-0"
+               aria-label="Google Partner, Eintrag bei Google Partners ansehen">
+              <img src="/Logos/google-partner-badge.svg" alt="Google Partner"
+                   width="304" height="291" decoding="async" class="h-16 w-auto" />
+            </a>
+            <p class="font-body text-sm leading-relaxed text-ink-800">
+              Zertifizierter <strong class="font-medium text-ink-950">Google&nbsp;Partner</strong>
+            </p>
           </div>
 
           <dl class="mt-12 grid grid-cols-1 gap-8 sm:grid-cols-3">
@@ -325,6 +346,7 @@
         <h2 id="kunden-title" class="mb-8 text-center font-body text-sm font-medium uppercase tracking-wide text-ink-700">
           Unternehmen, die bereits mit uns gearbeitet haben
         </h2>
+
       </div>
 
       <p class="sr-only">
@@ -1093,10 +1115,23 @@
   <footer role="contentinfo" class="bg-ink-950 text-white">
     <div class="container-page grid gap-10 py-16 sm:grid-cols-2 lg:grid-cols-[2fr_1fr_1fr]">
       <div>
-        <img src="Logos/ddm Logo svg/ddm_Logo_weiß.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+        <!-- Logo und Google-Partner-Badge nebeneinander. Das Badge steht
+             ausserdem im Hero der Startseite, in einem eigenen Abschnitt auf
+             /leistungen/google-ads/ und auf team.html. Faellt der Status weg,
+             muss es an allen vier Stellen verschwinden. -->
+        <div class="flex flex-wrap items-center gap-5">
+          <img src="Logos/ddm Logo svg/ddm_Logo_weiß.svg" alt="DDM Data Driven Marketing" class="h-8 w-auto" width="592" height="216" />
+          <a href="https://www.google.com/partners/agency?id=7275523841"
+             target="_blank" rel="noopener" class="inline-flex shrink-0"
+             aria-label="Google Partner, Eintrag bei Google Partners ansehen">
+            <img src="/Logos/google-partner-badge.svg" alt="Google Partner"
+                 width="304" height="291" loading="lazy" decoding="async" class="h-10 w-auto" />
+          </a>
+        </div>
         <p class="mt-4 text-sm text-ink-400">
           Datengetriebener Growth- und Performance-Partner für Mittelstand, B2B und E-Commerce.
         </p>
+
       </div>
 
       <div>
