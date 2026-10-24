@@ -154,6 +154,8 @@
         <ul class="mt-4 flex flex-wrap gap-x-3 gap-y-2" role="list">
           <li><span class="pill-accent">Google Ads</span></li>
           <li><span class="pill-accent">Microsoft Advertising</span></li>
+          <li><span class="pill-accent">Amazon Ads</span></li>
+          <li><span class="pill-accent">ChatGPT Ads</span></li>
           <li><span class="pill-accent">Performance Marketing</span></li>
           <li><span class="pill-accent">Tracking &amp; Measurement</span></li>
           <li><span class="pill-accent">Data &amp; Analytics</span></li>
@@ -182,7 +184,7 @@
          im Ordner, damit eine neue Karte beide Fassungen vorfindet.
 
          Die Portraits stehen in <picture>: WebP zuerst, PNG als Fallback.
-         Die WebP-Fassungen wiegen zusammen 45 statt 703 KB. Dieselbe
+         Die WebP-Fassungen wiegen zusammen 59 statt 990 KB. Dieselbe
          Konvention verfolgt src/input.css bei Franklin mit woff2 und woff. -->
     <section aria-labelledby="personen-title" class="section-shell">
       <div class="container-page">
@@ -305,6 +307,27 @@
               <li><span class="pill-accent">Content-Strategie</span></li>
               <li><span class="pill-accent">Struktur</span></li>
               <li><span class="pill-accent">GEO</span></li>
+            </ul>
+          </li>
+
+          <li class="surface card-hover flex flex-col p-6 sm:p-7">
+            <picture>
+              <source srcset="team/Mark-Bogdahn.webp" type="image/webp" />
+              <img src="team/Mark-Bogdahn.png" alt="Mark Bogdahn, Senior Performance Marketing Manager bei DDM"
+                   class="h-[132px] w-[132px] rounded-full object-cover" width="271" height="271" loading="lazy" />
+            </picture>
+            <h3 class="mt-5 font-body text-lg font-medium text-ink-950">Mark Bogdahn</h3>
+            <p class="mt-1 font-body text-sm text-accent-600">Senior Performance Marketing Manager</p>
+            <p class="mt-4 text-ink-800">
+              Steuert Kampagnen in Google Ads und Amazon Ads mit Schwerpunkt auf
+              Deckungsbeitrag und Skalierung. Entwickelt und testet Ansätze für
+              bezahlte Kampagnen auf ChatGPT.
+            </p>
+            <ul class="mt-5 flex flex-wrap gap-2 border-t border-ink-100 pt-5" role="list">
+              <li><span class="pill-accent">Google Ads</span></li>
+              <li><span class="pill-accent">Amazon Ads</span></li>
+              <li><span class="pill-accent">ChatGPT Ads</span></li>
+              <li><span class="pill-accent">Kampagnensteuerung</span></li>
             </ul>
           </li>
 
@@ -508,8 +531,9 @@
             <div class="grid gap-2 py-6 sm:grid-cols-[13rem_1fr] sm:gap-8">
               <dt class="font-body font-medium text-ink-950">Operative Steuerung</dt>
               <dd class="text-ink-800">
-                Senior SEA &amp; Performance Marketing Consultants. Kampagnenstruktur,
-                Gebotsstrategien und laufende Optimierung.
+                Senior SEA &amp; Performance Marketing Consultants und Senior
+                Performance Marketing Manager. Kampagnenstruktur, Gebotsstrategien
+                und laufende Optimierung.
               </dd>
             </div>
             <div class="grid gap-2 py-6 sm:grid-cols-[13rem_1fr] sm:gap-8">
@@ -548,7 +572,7 @@
                    width="304" height="291" loading="lazy" decoding="async" class="h-16 w-auto" />
             </a>
             <p class="text-sm text-ink-800">
-              Google führt DDM als Google&nbsp;Partner.
+              DDM ist offizieller Google&nbsp;Partner.
             </p>
           </div>
         </div>
@@ -623,11 +647,16 @@
     </section>
 
     <!-- ===== KARRIERE =====
-         Sekundär und visuell zurückgenommen. Bewusst ohne Aufzählung von
-         Arbeitgebervorteilen: Im Projekt ist keiner dokumentiert, und
-         erfundene Benefits wären hier besonders schnell durchschaubar.
-         Es gibt noch keine Jobs-Seite mit einzelnen Positionen, deshalb
-         bleibt es bei der Initiativ-Einladung. -->
+         Sekundär und visuell zurückgenommen, beide Knöpfe deshalb in der
+         zweiten Stufe: Der wichtigste Conversion-Pfad dieser Seite bleibt
+         der potenzielle Kunde.
+         Bewusst ohne Aufzählung von Arbeitgebervorteilen - die stehen auf
+         der Stellenseite, wo sie aus der Anzeige belegt sind.
+         Der Text nennt keine konkrete Stelle: Was offen ist, steht unter
+         /jobs/ und muss dann nur an einer Stelle gepflegt werden.
+         Der Datenschutzhinweis steht hier wie auf /jobs/ und auf der
+         Stellenseite - Art. 13 DSGVO verlangt die Information dort, wo die
+         Daten erhoben werden. -->
     <section aria-labelledby="jobs-title" class="section-shell bg-ink-100">
       <div class="container-page section-grid">
         <div class="section-aside">
@@ -638,13 +667,21 @@
         </div>
         <div class="section-main">
           <p class="measure text-lg leading-relaxed text-ink-800">
-            Wir arbeiten nah an Accounts, Daten und Geschäftsmodellen und geben unseren
-            Consultants Verantwortung. Wenn du Performance Marketing nicht nur bedienen,
-            sondern fachlich weiterdenken willst, sollten wir uns kennenlernen.
+            Was gerade offen ist, steht in der Jobübersicht. Ist nichts dabei, freuen wir
+            uns trotzdem über deine Nachricht.
           </p>
-          <a href="mailto:jobs@datadrivenmarketing.de" class="btn-secondary mt-6">
-            Initiativ bewerben
-          </a>
+          <div class="mt-6 flex flex-wrap gap-4">
+            <a href="mailto:jobs@datadrivenmarketing.de?subject=Initiativbewerbung" class="btn-secondary">
+              Initiativ bewerben
+            </a>
+            <a href="/jobs/" class="btn-secondary">
+              Jobs ansehen
+            </a>
+          </div>
+          <p class="measure mt-6 text-sm text-ink-700">
+            Was mit deinen Bewerbungsunterlagen geschieht, steht in der
+            <a href="/datenschutz" class="text-accent-700 underline underline-offset-2 hover:text-ink-950">Datenschutzerklärung</a>.
+          </p>
         </div>
       </div>
     </section>
